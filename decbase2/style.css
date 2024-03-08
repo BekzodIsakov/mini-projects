@@ -1,0 +1,287 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+:root {
+  --brown: #caa892;
+  --green: #37806b;
+  --dark: #212121;
+  --gray: #646464;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  max-width: 1920px;
+  min-height: 100vh;
+  margin: auto;
+  font-size: 1.6rem;
+}
+
+header.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 34px;
+  margin-block-end: 94px;
+  margin-bottom: 12.7rem;
+}
+
+h1 {
+  font-size: 7.2rem;
+  line-height: 1.1;
+  text-transform: capitalize;
+  margin-bottom: 23px;
+}
+
+h2 {
+  color: var(--dark);
+  font-size: 4.8rem;
+  line-height: 1.2;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--gray);
+  text-transform: uppercase;
+  line-height: 1.35;
+  margin-bottom: 12px;
+}
+
+h4 {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+img {
+  display: block;
+}
+
+button {
+  background: none;
+  border: none;
+  margin: auto;
+}
+
+dialog {
+  width: 98vw;
+  height: 98vh;
+  margin: 1vh auto;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  column-gap: 4rem;
+}
+
+.material-symbols-outlined {
+  display: block;
+  background: none;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+header nav a {
+  text-transform: uppercase;
+  color: var(--dark);
+}
+
+header nav a.active {
+  color: var(--gray);
+}
+
+@media screen and (width < 900px) {
+  header nav {
+    display: none;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.signup {
+  display: inline-block;
+  background: var(--brown);
+  border-radius: 15px 0;
+  padding-inline: 19px;
+  padding-block: 5px;
+  color: #fff;
+  text-transform: capitalize;
+  line-height: 1.4;
+}
+
+@media screen and (min-width: 900px) {
+  .hamburger-menu {
+    border: solid red;
+    display: none;
+  }
+}
+
+.container {
+  max-width: 1346px;
+  margin: auto;
+  padding-inline: 15px;
+}
+
+.carousel__buttons {
+  display: flex;
+  gap: 1.8rem;
+  margin-left: 1.8rem;
+}
+
+.carousel__buttons button {
+  border: none;
+  background: #fff;
+  box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.3);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.carousel__buttons button:active {
+  transform: translateY(1px);
+  box-shadow: -1px 2px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.carousel__buttons button:focus {
+  background: var(--green);
+  color: #fff;
+}
+
+.interior {
+  display: flex;
+  align-items: center;
+  column-gap: 3.26%;
+  row-gap: 8rem;
+  margin-bottom: 12.6rem;
+}
+
+.interior > div {
+  flex: 1;
+}
+
+.interior p {
+  font-size: 1.8rem;
+  line-height: 1.65;
+  color: var(--gray);
+  margin-bottom: 46px;
+}
+
+.interior a {
+  text-transform: uppercase;
+  color: white;
+  background: var(--green);
+  font-size: 1.8rem;
+  line-height: 1.2;
+  padding: 8px 28px;
+  border-radius: 20px 0;
+  font-weight: 500;
+}
+
+.interior > div:last-child {
+  border: solid var(--brown);
+  border-radius: 20% 0;
+}
+
+.interior img {
+  width: 100%;
+  transform: translate(-25px, -25px);
+  border-radius: inherit;
+}
+
+@media screen and (width < 1150px) {
+  h1 {
+    font-size: 4em;
+  }
+
+  .interior > div:last-child {
+    flex-grow: 1.7;
+  }
+}
+
+@media screen and (width <= 800px) {
+  .interior {
+    flex-direction: column;
+  }
+}
+
+.services {
+  padding-inline: 4rem;
+}
+
+.services__titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 5.1rem;
+}
+
+.services__cards {
+  display: flex;
+  gap: 3.7rem;
+  padding-inline: 2rem;
+  margin-bottom: 20.4rem;
+}
+
+@media screen and (width <= 825px) {
+  .services__cards {
+    flex-direction: column;
+  }
+
+  .services .carousel__buttons {
+    flex-direction: column;
+  }
+
+  .services .carousel__buttons button {
+    transform: rotate(90deg);
+  }
+}
+
+.services__card {
+  display: flex;
+  gap: 2rem;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.14);
+  padding: 3rem;
+  border-radius: 5rem 0;
+}
+
+.services__card img {
+  stroke: red;
+}
+
+.services__card p {
+  color: inherit;
+  font-size: 1.6rem;
+}
+
+.services__card.active {
+  background: var(--brown);
+  color: #fff;
+}

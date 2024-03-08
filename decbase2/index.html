@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header class="container">
+    <a href="#">
+      <img src="./images/logo.png" alt="logo">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="project">project</a></li>
+        <li><a href="services">services</a></li>
+        <li><a href="about">about</a></li>
+        <li><a href="blog">blog</a></li>
+        <li><a href="shop">shop</a></li>
+        <li><a href="contact">contact</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <a href="./signup.html" class="signup">sign up</a>
+      <button class="hamburger-menu" id="menuBtn">
+        <span class="material-symbols-outlined">
+          menu
+        </span>
+      </button>
+    </div>
+
+  </header>
+
+  <main>
+    <section class="interior container">
+      <div>
+        <h3>
+          modern interior
+        </h3>
+        <h1>create your interior design</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation.</p>
+        <a href="#contact">contact</a>
+      </div>
+      <div>
+        <img src="./images/interior.png" alt="modern interior">
+      </div>
+    </section>
+
+    <section class="services container">
+      <div class="services__titles">
+        <div>
+          <h3>what we do</h3>
+          <h2>our service</h2>
+        </div>
+        <div class="carousel__buttons">
+          <button>
+            <span class="material-symbols-outlined">
+              chevron_left
+            </span>
+          </button>
+          <button>
+            <span class="material-symbols-outlined">
+              chevron_right
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="services__cards">
+        <div class="services__card">
+          <div>
+            <img src="./images/svg/sr.svg" style="stroke: red" alt="interior design">
+          </div>
+          <div>
+            <h4>
+              interior design
+            </h4>
+            <p>Lorem ipsum dolor amet consectetur
+              adipiscing elit sed eiusmod tempor
+              incididunt ut labore.</p>
+          </div>
+        </div>
+        <div class="services__card active">
+          <div>
+            <img src="./images/svg/ere.svg" alt="architecture">
+          </div>
+          <div>
+            <h4>
+              architecture
+            </h4>
+            <p>Lorem ipsum dolor amet consectetur
+              adipiscing elit sed eiusmod tempor
+              incididunt ut labore.</p>
+          </div>
+        </div>
+        <div class="services__card">
+          <div>
+            <img src="./images/svg/sd.svg" alt="planning">
+          </div>
+          <div>
+            <h4>
+              planning
+            </h4>
+            <p>Lorem ipsum dolor amet consectetur
+              adipiscing elit sed eiusmod tempor
+              incididunt ut labore.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+
+  <dialog id="dialog">
+    <a href="#">
+      <img src="./images/logo.png" alt="logo">
+    </a>
+    <nav>
+      <ul>
+        <li><a style="color: #37806b; background: #ccc" href="#">home</a></li>
+        <li><a href="project">project</a></li>
+        <li><a href="services">services</a></li>
+        <li><a href="about">about</a></li>
+        <li><a href="blog">blog</a></li>
+        <li><a href="shop">shop</a></li>
+        <li><a href="contact">contact</a></li>
+      </ul>
+    </nav>
+    <button>
+      <span class="material-symbols-outlined" id="closeBtn">close</span>
+    </button>
+  </dialog>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn')
+    const dialog = document.getElementById("dialog");
+    const closeBtn = document.getElementById("closeBtn");
+
+    menuBtn.onclick = () => dialog.showModal();
+    closeBtn.onclick = () => dialog.close()
+
+  </script>
+</body>
+
+</html>
