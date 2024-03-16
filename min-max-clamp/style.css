@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: monospace;
+  font-size: 2rem;
+  text-align: center;
+}
+
+article {
+  display: grid;
+  justify-items: center;
+}
+
+hr {
+  margin-block: 8rem 5rem;
+}
+
+span {
+  display: inline-block;
+}
+
+.parent {
+  background: #f9f9f9;
+  width: min(500px, 95vw);
+  border: solid lightgray;
+  padding: 0.5em;
+  margin: 25px auto;
+}
+
+.window-width {
+  border-bottom: 3px dashed goldenrod;
+}
+
+.value {
+  padding: 0.3em 0.75em;
+  border-radius: 3px;
+  background: lavenderblush;
+}
+
+.code {
+  background: lavenderblush;
+  padding: 0.3em 0.75em;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.element {
+  background: papayawhip;
+  height: 200px;
+  display: grid;
+  place-items: center;
+  border: 1px solid gold;
+}
+
+.min .element {
+  width: min(70%, 400px);
+}
+
+.max .element {
+  width: max(70%, 400px);
+}
+
+.clamp .element {
+  width: clamp(400px, 50%, 700px);
+}
+
+.highlighted {
+  background: gold;
+}
+
+.line {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 55px;
+  width: 100vw;
+  height: 1px;
+  background: lightgray;
+  z-index: -9;
+}

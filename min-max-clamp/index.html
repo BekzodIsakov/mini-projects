@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS min(), max() & clamp()</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <div class="parent">Parent (window) width: <span id="windowWidth" class="value">0px</span></div>
+  <div class="line"></div>
+
+  <article class="min">
+    <h2>CSS <code>min()</code> function</h2>
+    <div class="code"><code>width: min(<span id="minRelative">70%</span>, <span id="minAbsolute">400px</span>);</code>
+    </div>
+    <div id="minElement" class="element">
+      <p>Element actual width:&nbsp;<span class='value highlighted' id="val">0px</span></p>
+    </div>
+  </article>
+  <hr />
+  <article class="max">
+    <h2>CSS <code>max()</code> function</h2>
+    <div class="code"><code>width: max(<span id="maxRelative">70%</span>, <span id="maxAbsolute">400px</span>);</code>
+    </div>
+    <div id="maxElement" class="element">
+      <p>Element actual width:&nbsp;<span class='value highlighted' id="val">0px</span></p>
+    </div>
+  </article>
+  <hr />
+  <article class="clamp">
+    <h2>CSS <code>clamp()</code> function</h2>
+    <div class="code">
+      <code>width: clamp(<span id="clampMin">400px</span>, <span id="clampRelative">50%</span>, <span id="clampMax">700px</span>);</code>
+    </div>
+    <div id="clampElement" class="element">
+      <p>Element actual width:&nbsp;<span class='value highlighted' id="val">0px</span></p>
+    </div>
+  </article>
+</body>
+
+</html>
