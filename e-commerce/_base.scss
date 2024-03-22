@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: $dark;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 7.2rem;
+  line-height: 1.05;
+}
+
+h2 {
+  font-size: 4rem;
+  font-size: clamp(2.7rem, 4.5vw, 4rem);
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: clamp(2.2rem, 4.2vw, 3.4rem);
+  line-height: 1.11;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+
+img {
+  display: block;
+}
