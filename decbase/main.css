@@ -23,13 +23,12 @@ body {
   font-size: 1.6rem;
 }
 
-header.container {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 34px;
   margin-block-end: 94px;
-  margin-bottom: 12.7rem;
 }
 
 h1 {
@@ -67,33 +66,8 @@ img {
   display: block;
 }
 
-button {
-  background: none;
-  border: none;
-  margin: auto;
-}
-
-dialog {
-  width: 98vw;
-  height: 98vh;
-  margin: 1vh auto;
-  border-radius: 8px;
-  padding: 5px;
-}
-
-dialog::backdrop {
-  background: rgba(0, 0, 0, 0.7);
-}
-
-header > div {
+header > a {
   display: flex;
-  align-items: center;
-  column-gap: 4rem;
-}
-
-.material-symbols-outlined {
-  display: block;
-  background: none;
 }
 
 header ul {
@@ -112,16 +86,15 @@ header nav a.active {
 }
 
 @media screen and (width < 900px) {
-  header nav {
+  nav {
     display: none;
   }
 }
-
 a {
   text-decoration: none;
 }
 
-.signup {
+header > a:last-child {
   display: inline-block;
   background: var(--brown);
   border-radius: 15px 0;
@@ -130,13 +103,6 @@ a {
   color: #fff;
   text-transform: capitalize;
   line-height: 1.4;
-}
-
-@media screen and (min-width: 900px) {
-  .hamburger-menu {
-    border: solid red;
-    display: none;
-  }
 }
 
 .container {
@@ -178,7 +144,8 @@ a {
 .interior {
   display: flex;
   align-items: center;
-  column-gap: 3.26%;
+  -moz-column-gap: 3.26%;
+       column-gap: 3.26%;
   row-gap: 8rem;
   margin-bottom: 12.6rem;
 }
@@ -220,18 +187,15 @@ a {
   h1 {
     font-size: 4em;
   }
-
   .interior > div:last-child {
     flex-grow: 1.7;
   }
 }
-
 @media screen and (width <= 800px) {
   .interior {
     flex-direction: column;
   }
 }
-
 .services {
   padding-inline: 4rem;
 }
@@ -254,16 +218,13 @@ a {
   .services__cards {
     flex-direction: column;
   }
-
   .services .carousel__buttons {
     flex-direction: column;
   }
-
   .services .carousel__buttons button {
     transform: rotate(90deg);
   }
 }
-
 .services__card {
   display: flex;
   gap: 2rem;
@@ -284,4 +245,4 @@ a {
 .services__card.active {
   background: var(--brown);
   color: #fff;
-}
+}/*# sourceMappingURL=main.css.map */
